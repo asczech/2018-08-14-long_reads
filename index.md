@@ -1,6 +1,6 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "gt"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+title: "Long Read Sequencing Genomics Workshop"
 venue: "WUR Radix"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Radix - Wageningen campus, Droevendaalsesteeg 1, 6708 PB Wageningen"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
@@ -17,37 +17,18 @@ collaborative_notes:             # optional: URL for the workshop collaborative 
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-{% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
 
-{% comment %}
-  HEADER
-
-  Edit the values in the block above to be appropriate for your workshop.
-  If the value is not 'true', 'false', 'null', or a number, please use
-  double quotation marks around the value, unless specified otherwise.
-  And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-<h4>Genetwister Technologies B.V. and Wageningen University & Research are pleased to invite you to "The Long Reads Sequencing Genomic Workshop".</h4>
+<h4>Genetwister Technologies B.V. and Wageningen University & Research are pleased to invite you to <strong>{{page.title}}</strong>.</h4>
 
 <h2 id="general">General Information</h2>
 
-{% comment %}
-  INTRODUCTION
+In this two day workshop you will learn about two most common long read sequencing technologies: Pacific Bioscience an Oxford Nanopore Technology. You will learn how to work with the data, perform assembly, mapping, and compare the results of both technologies.
 
-  Edit the general explanatory paragraph below if you want to change
-  the pitch.
-{% endcomment %}
-
-
-{% comment %}
-  AUDIENCE
-
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
-{% endcomment %}
-
+<p id="who">
+  <strong>Who:</strong>
+  The workshop is intended for bioinformaticians or researchers who want to learn about application of latest sequencing technologies in genomics. 
+  <strong>No prior experience with PacBio or ONT sequencing data is required.</strong>
+</p>
 
 {% comment %}
   LOCATION
@@ -87,18 +68,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  {% if page.carpentry == "swc" %}
-  Software Carpentry's
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry's
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry's
-  {% endif %}
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  <strong>Requirements:</strong> It is not necessary to bring a laptop.  Workstations with preinstalled virtual machine with all data and tools will be provided. Principles of bioinformatics and genomics is necessary. Participants will work in linux environment.
 </p>
 
 {% comment %}
