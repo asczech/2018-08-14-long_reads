@@ -1,8 +1,8 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "dc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+carpentry: "gt"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
 venue: "WUR Radix"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "Radix - Wageningen campus, Droevendaalsesteeg 1, 6708 PB Wageningen"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "51.986922, 5.664407"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
@@ -29,10 +29,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 
 
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
+<h4>Genetwister Technologies B.V. and Wageningen University & Research are pleased to invite you to "The Long Reads Sequencing Genomic Workshop".</h4>
 
 <h2 id="general">General Information</h2>
 
@@ -42,13 +39,7 @@ and our administrator may contact you if we need any extra information.</h4>
   Edit the general explanatory paragraph below if you want to change
   the pitch.
 {% endcomment %}
-{% if page.carpentry == "swc" %}
-  {% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/intro.html %}
-{% endif %}
+
 
 {% comment %}
   AUDIENCE
@@ -56,13 +47,7 @@ and our administrator may contact you if we need any extra information.</h4>
   Explain who your audience is.  (In particular, tell readers if the
   workshop is only open to people from a particular institution.
 {% endcomment %}
-{% if page.carpentry == "swc" %}
-  {% include sc/who.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/who.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/who.html %}
-{% endif %}
+
 
 {% comment %}
   LOCATION
@@ -167,23 +152,6 @@ and our administrator may contact you if we need any extra information.</h4>
 
 <hr/>
 
-{% comment %} 
- SURVEYS - DO NOT EDIT SURVEY LINKS 
-{% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "swc" %} 
-<p><a href="{{ site.swc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.swc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif site.carpentry == "dc" %}
-<p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% elsif site.carpentry == "lc" %}
-<p><a href="{{ site.lc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.lc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% endif %}
-
-<hr/>
 
 
 {% comment %}
