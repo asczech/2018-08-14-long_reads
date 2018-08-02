@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 title: "Long Read Sequencing Genomics Workshop"
-venue: "WUR Radix"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "Radix, WUR"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Radix - Wageningen campus, Droevendaalsesteeg 1, 6708 PB Wageningen"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "nl"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
