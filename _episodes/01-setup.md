@@ -1,115 +1,47 @@
 ---
-title: "Lesson Design"
+title: "Setup for the workshop"
 teaching: 10
-exercises: 0
-questions:
-- "How do we design lessons?"
+exercises: 10
 objectives:
-- "Describe the reverse instructional design process."
-- "Describe the purpose and implementation of formative assessments."
-keypoints:
-- "Lessons are design in four stages: conceptual, summative, formative, and connective."
+- "Have the Ubuntu VM running in VirtualBox, or"
+- "Know which tools to used and where to find the data"
+
 ---
 
-This episode describes how we go about designing lessons and why.
-For more information on how we design lessons and why,
-see [the instructor training course][training].
+For the workshop we use Ubuntu Linux as the main Operating System. We have created a VirtualBox image, including all the necessary tools and data. You are of course welcome to use your own Linux-based system.
 
-## Reverse Instructional Design
+## Installing the VirtualBox image
 
-In principle,
-we design lessons in four stages:
+VirtualBox is a virtualization tool from VMWare and is [freely available](https://www.virtualbox.org/wiki/Downloads). The Windows systems in use for this workshop at Wageningen UR already have it installed.
 
-1.  **Conceptual**:
-    describe who the lesson is for,
-    what its overall goals are,
-    and how long it is going to be.
-    For example,
-    the lesson might be for people who have taught themselves
-    how to write page-long statistical analyses in R using RStudio,
-    but have never written functions or run programs from the Unix shell prompt.
-    Its overall goal might be to teach them how to write modular multi-page programs
-    and how to use dplyr to regularize their analyses,
-    and the time allotted might be half a day.
-    It's often helpful to use [concept maps][concept-maps] in this stage.
+Please download the [The Ubuntu image](dropbox) and store it on a local hard drive. A network location usually does not work, so it is better to store it locally.
 
-2.  **Summative Assessment**:
-    figure out what learners will do to demonstrate that they have mastered the material.
-    This is the most important step of the four,
-    since it is what *actually* determines the scope of the lesson.
-    In this case,
-    the summative assessment might be to write a four-function program
-    to load, clean up, analyze, and plot a collection of medical data sets.
+The next steps will install and run the Ubuntu image:
 
-3.  **Formative Assessments**:
-    describe the exercises that learners will do during the lesson.
-    To switch examples for a moment,
-    it wouldn't be fair to ask someone to parallel park on a driving test
-    if they'd never done it before,
-    so two formative assessments in a driving course might be
-    "back up" and "parallel park between some safety cones".
+1. Start VirtualBox
+2. Select **New** from the top-left (the blue 'star')
+3. Give the virtual machine a name, for example **Genomics**. Type is **Linux** and Version **Ubuntu (64-bit)**, or **Linux (64-bit)**. Click 'next'.
+4. Select Memory size: keep the setting in the green, but above 1GB. For this workshop we recommend to use half of the available memory (about 4GB). Click 'next'
+5. Load the image by selecting 'Use an existing virtual hard disk file' and locate the **.vdi** file. Click 'create'.
+6. Clicking **Start** (green arrow) should now start Ubuntu and you will automatically login.
 
-4.  **Connect the Dots**:
-    put the formative assessments in order
-    and develop lesson episodes to go from one to the next.
-    It is common to sketch a concept map for each lesson episode,
-    both to outline its key ideas
-    and to check that it's not too big.
-    The ordering of lesson episodes is constrained by dependencies
-    but is usually not completely determined by them:
-    there are often several different orders in which ideas can sensibly be introduced.
-    It is common to discover a need for more formative assessments at this stage;
-    to continue with the driving example,
-    the lesson author might realize that a third exercise on turning while backing up is needed
-    (since many people initially turn the steering wheel the wrong way when they're in reverse).
+The image is a regular Ubuntu install, so if you install this on your laptop or desktop you can continue to use it. 
 
-In practice, the process often looks more like this:
+## Installing the data and tools on your own Ubuntu
 
-1.  Draft the assumptions and major outcomes.
+The list of tools used for workshop:
 
-2.  Describe the summative assessments for each half day of material
-    (i.e., one summative assessment for a three-hour lesson and two for a full-day lesson).
+1. Java 8
+2. Assembly-stats
+3. Minimap2
+4. Canu
+5. Platanus
+6. Mummer 4
+7. Samtools & BCF tools
+8. Tablet
 
-3.  Write a one- or two-line description of the formative assessments
-    building up to those summative assessments.
-    These should be used ideally every 5 minutes and at least every 10-15 minutes.
+The workshop code folder contains a shell-script [installing_workshop_vm.sh]({{site.workshop_site}}/code/installing_workshop_vm.sh) which installs all required packages/
 
-4.  Get early feedback from peers,
-    particularly on how realistic the time estimates are.
-
-5.  Do a second pass to flesh out the assumptions and assessments.
-
-6.  Get more feedback.
-
-7.  Start writing the lesson content.
-
-Steps 1-6 are best done in a single Markdown file for easy review;
-if you are using this template,
-you should call it `_extras/design.md`.
-Once work starts on step 7,
-the detailed milestones should be moved into lesson episode files.
-For an example of this,
-see the [novice Python lesson using the gapminder data][python-gapminder].
-
-## What Makes a Good Formative Assessment
-
-The two purposes of formative assessment are
-(a) to help learners prepare for the summative assessment and
-(b) to tell them and their instructor *during the lesson*
-whether they're making progress (and if not, what obstacles they have hit).
-If lesson episodes are 10-15 minutes long,
-then formative assessments should take no more than 5 minutes.
-This means that formative assessments should be:
-
-*   multiple choice questions,
-*   debugging exercises
-    (in which the learner is given a few lines of code that do the wrong thing
-    and asked to find and fix the bug), or
-*   extensions of examples show in the lecture.
-
-Good formative assessments do *not* require learners to write lots of code from scratch:
-it takes too long,
-there are usually too many possible right solutions to discuss in just a couple of minutes,
-and many novices find a blank page (or screen) intimidating.
+The data can be downloaded from [Dropbox](http://www.dropbox.com). 
 
 {% include links.md %}
