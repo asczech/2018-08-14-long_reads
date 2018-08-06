@@ -2,10 +2,13 @@
 title: "Setup for the workshop"
 teaching: 10
 exercises: 10
+questions: 
 objectives:
-- "Have the Ubuntu VM running in VirtualBox, or"
-- "Know which tools to used and where to find the data"
-
+- "To have the Ubuntu VM running in VirtualBox, or"
+- "To know which tools to used and where to find the data for local installation"
+keypoints:
+- VM can be used after the workshop
+- Installing required packages on own machine may require root privileges. 
 ---
 
 For the workshop we use Ubuntu Linux as the main Operating System. We have created a VirtualBox image, including all the necessary tools and data. You are of course welcome to use your own Linux-based system.
@@ -14,7 +17,7 @@ For the workshop we use Ubuntu Linux as the main Operating System. We have creat
 
 VirtualBox is a virtualization tool from VMWare and is [freely available](https://www.virtualbox.org/wiki/Downloads). The Windows systems in use for this workshop at Wageningen UR already have it installed.
 
-Please download the [The Ubuntu image](dropbox) and store it on a local hard drive. A network location usually does not work, so it is better to store it locally.
+Please download the [The Ubuntu image](https://www.dropbox.com/s/pi8t7gh43itbi64/GT-workshop.vdi?dl=0) and store it on a local hard drive. A network location usually does not work, so it is better to store it locally.
 
 The next steps will install and run the Ubuntu image:
 
@@ -40,8 +43,12 @@ The list of tools used for workshop:
 7. Samtools & BCF tools
 8. Tablet
 
-The workshop code folder contains a shell-script [installing_workshop_vm.sh]({{site.workshop_site}}/code/installing_workshop_vm.sh) which installs all required packages/
+The workshop code folder contains a shell-script [installing_workshop_vm.sh]({{site.workshop_site}}code/installing_workshop_vm.sh) which installs all required packages.
 
-The data can be downloaded from [Dropbox](http://www.dropbox.com). 
+The data can be downloaded from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm687v/prepared.tar.gz?dl=0). 
+
+## Rounding up
+
+The data folders contains, next to the raw data, also all intermediate and end results. So if for some reason a step in the excersise fails to produce any results you can still continue.
 
 {% include links.md %}
