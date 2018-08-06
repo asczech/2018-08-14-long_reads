@@ -7,6 +7,8 @@ objectives:
 - "Topics and technologies used during this workshop"
 keypoints:
 - "This part of the lesson will mostly be given in the form of a lecture"
+apps:
+- Powerpoint
 ---
 
 ## Topics

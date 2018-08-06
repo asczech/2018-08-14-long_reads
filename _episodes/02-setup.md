@@ -8,7 +8,10 @@ objectives:
 - "To know which tools to used and where to find the data for local installation"
 keypoints:
 - VM can be used after the workshop
-- Installing required packages on own machine may require root privileges. 
+- Installing required packages on own machine may require root privileges.
+apps:
+-VirtualBox
+-Ubuntu 
 ---
 
 For the workshop we use Ubuntu Linux as the main Operating System. We have created a VirtualBox image, including all the necessary tools and data. You are of course welcome to use your own Linux-based system.
