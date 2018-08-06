@@ -49,6 +49,6 @@ The data can be downloaded from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm6
 
 ## Rounding up
 
-The data folders contains, next to the raw data, also all intermediate and end results. So if for some reason a step in the excersise fails to produce any results you can still continue.
+The data folders also contains, next to the raw data, all intermediate and end results. So if for some reason a step in the exercise fails to produce any results you can still continue.
 
 {% include links.md %}
