@@ -1,0 +1,11 @@
+{% comment %}
+  Display key points for an episode.
+{% endcomment %}
+<blockquote class="apps">
+  <h2>Used applications</h2>
+  <ul>
+    {% for apps in page.apps %}
+    <li>{{ apps|markdownify }}</li>
+    {% endfor %}
+  </ul>
+</blockquote>

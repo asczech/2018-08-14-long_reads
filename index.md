@@ -68,7 +68,7 @@ In this two day workshop you will learn about two most common long read sequenci
   Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> It is not necessary to bring a laptop.  Workstations with preinstalled virtual machine with all data and tools will be provided. Basic knowledge of bioinformatics and genomics is a prerequisites. Participants will work in a Linux environment.
+  <strong>Requirements:</strong> It is not necessary to bring a laptop.  Workstations with preinstalled virtual machine with all data and tools will be provided. Basic knowledge of bioinformatics and genomics is a prerequisite. Participants will work in a Linux environment.
 </p>
 
 
