@@ -50,6 +50,10 @@ The workshop code folder contains a shell-script [installing_workshop_vm.sh]({{s
 
 The data can be downloaded from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm687v/prepared.tar.gz?dl=0). 
 
+## Origin of the data
+
+For this workshop we have selected data sets and a particular region of **Arabidopsis thaliana (Thale cress)**. 
+
 ## Rounding up
 
 The data folders also contains, next to the raw data, all intermediate and end results. So if for some reason a step in the exercise fails to produce any results you can still continue.
