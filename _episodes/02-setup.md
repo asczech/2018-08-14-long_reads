@@ -7,11 +7,11 @@ objectives:
 - "To have the Ubuntu VM running in VirtualBox, or"
 - "To know which tools to used and where to find the data for local installation"
 keypoints:
-- VM can be used after the workshop
-- Installing required packages on own machine may require root privileges.
+- "VM can be used after the workshop"
+- "Installing required packages on own machine may require root privileges."
 apps:
-- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-- [The Ubuntu image](https://www.dropbox.com/s/pi8t7gh43itbi64/GT-workshop.vdi?dl=0)
+- "[VirtualBox](https://www.virtualbox.org/wiki/Downloads)"
+- "[The Ubuntu image](https://www.dropbox.com/s/pi8t7gh43itbi64/GT-workshop.vdi?dl=0)"
 ---
 
 For the workshop we use Ubuntu Linux as the main Operating System. We have created a VirtualBox image, including all the necessary tools and data. You are of course welcome to use your own Linux-based system.
