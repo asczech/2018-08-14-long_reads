@@ -8,7 +8,7 @@ objectives:
 keypoints:
 - "This part of the lesson will mostly be given in the form of a lecture"
 apps:
-- Powerpoint
+- "Powerpoint"
 ---
 
 ## Topics
