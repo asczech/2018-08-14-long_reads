@@ -12,6 +12,7 @@ keypoints:
 - "Each platform and each data sets requires hands-on work with the assembler"
 apps:
 - "./tools/canu-1.7.1/Linux-amd64/bin/canu"
+- "./tools/platanus/platanus"
 ---
 
 In this section we focus on creating assemblies using Platanus (Illumina) and Canu (PacBio / Nanopore).
@@ -614,7 +615,44 @@ oeaThreads=1
 
 > ## Run Canu on the Nanopore data
 > Change the command in such a way that it will use the Nanopore data for assembly. Follow the process of Canu. What do you see? Find the expected coverage after each step and try to explain what is happening.
+> 
+> If the assembly takes too long, you can use the corrected read set:
+>~~~
+>./data/raw_reads/nanopore_reads.corrected.fastq
+>~~~
+>{: .bash}
+> > ## Solution
+> >~~~
+> >./tools/canu-1.7.1/Linux-amd64/bin/canu -s results/canu.spec -nanopore-raw ./data/raw_data/nanopore_reads.fastq -p canu_nanopore -d results/canu_nanopore genomeSize=1M
+> >~~~
+> >{: .bash}
+> {: .solution}
 > > ## Log file
 > > 
+> {: .solution}
+{: .challenge}
+
+## Short read assembly
+
+To assembly the Illumina data we will use the Platanus assembler:
+~~~
+./tools/platanus/platanus assemble -k 21 -m 4 -t 1 -f ./data/raw_data/illumina_R1.fastq ./data/raw_data/illumina_R2.fastq -o results/illumina_assembly
+~~~
+{: .bash}
+> ## Platanus assembler
+> While the Platanus assembler is running, investigate the following items:
+> 
+> 1. What does the -k stand for?
+> 2. How does this setting relate to heterozygosity, ploidy or repeat content?
+{: .challenge}
+
+## Basic statistics on the assemblies
+
+> ## Get statistics
+> Use the assembly-stats program from the previous session to get the statistics on all three assemblies.
+> > Solution
+> >~~~
+> >~~~
+> >{: .bash}
 > {: .solution}
 {: .challenge}
