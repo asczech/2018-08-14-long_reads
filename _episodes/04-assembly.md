@@ -68,10 +68,11 @@ oeaThreads=1
 > ~~~
 > ./results/canu_pacbio/canu_pacbio.report
 > ~~~
-> While Canu is running, try to find out what steps Canu will take to assembly the reads and how it works.
 > {: .bash}
+> While Canu is running, try to find out what steps Canu will take to assembly the reads and how it works.
 > Have a look at this file while Canu is running. What do you see? Find the expected coverage after each step and try to explain what is happening.
 > > ## Log file
+> >~~~
 > >[CORRECTION/READS]
 > >--
 > >-- In gatekeeper store './canu_pacbio.gkpStore':
@@ -606,8 +607,8 @@ oeaThreads=1
 > >--     90      919604             1      919604
 > >--    100      123134             2     1042738
 > >--
-> >
-> >
+> >~~~
+> >{: .bash}
 > {: .solution}
 {: .challenge}
 
