@@ -650,8 +650,19 @@ To assembly the Illumina data we will use the Platanus assembler:
 
 > ## Get statistics
 > Use the assembly-stats program from the previous session to get the statistics on all three assemblies.
-> > Solution
+> > ## PacBio assembly
 > >~~~
+> >./tools/assembly-stats-master/build/assembly-stats ./results/canu_pacbio/canu_pacbio.contigs.fasta 
+> >stats for ./results/canu_pacbio/canu_pacbio.contigs.fasta
+> >sum = 1042738, n = 2, ave = 521369.00, largest = 919604
+> >N50 = 919604, n = 1
+> >N60 = 919604, n = 1
+> >N70 = 919604, n = 1
+> >N80 = 919604, n = 1
+> >N90 = 123134, n = 2
+> >N100 = 123134, n = 2
+> >N_count = 0
+> >Gaps = 0
 > >~~~
 > >{: .bash}
 > {: .solution}
