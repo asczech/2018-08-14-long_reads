@@ -19,12 +19,61 @@ A common question to ask after finishing a de novo assembly is how does my new d
 
 To answer this question, we will use **mummerplot** to align two sequence files to each other and create a nice plot based on these alignments.
 
-## Comparison to cultivar reference genome
+The first step is to align two fasta files using **nucmer**. Based on these alignment **mummerplot** will provide a PNG image with the matching regions, colored based on the identity score.
 
-## Comparison to TAIR10 reference genome
+~~~
+./tools/nucmer 
+~~~
+{: .bash}
 
-## Repeats in the assemblies
+~~~
+./tools/mummerplot 
+~~~
+{: .bash}
 
-## Comparison of assemblies
+> ## Comparison to cultivar reference genome
+> Use both applications to compare the three assemblies to the reference sequence:
+>~~~
+> ./data/references/reference1MB.fasta
+>~~~
+>{: .bash}
+> > ## PacBio
+> {: .solution}
+> > ## Nanopore
+> {: .solution}
+> > ## Illumina
+> {: .solution}
+> Now discus:
+> 
+> 1. What do you see? 
+> 2. Are the assemblies similar to the reference or not? 
+> 3. Which sequencing platform do you prefer?
+{: .challenge}
 
-## Mapping reads to the assemblies
+> ## Comparison to TAIR10 reference genome
+> Use both applications to compare the three assemblies to the reference sequence:
+>~~~
+> ./data/references/reference1MB.fasta
+>~~~
+>{: .bash}
+> > ## PacBio
+> {: .solution}
+> > ## Nanopore
+> {: .solution}
+> > ## Illumina
+> {: .solution}
+> Now discus:
+> 
+> 1. What do you see? 
+> 2. Are the assemblies similar to the TAIR10 genome or not? 
+> 3. What does this mean for our cultivar?
+{: .challenge}
+
+> ## Repeats in the assemblies
+{: .challenge}
+
+> ## Comparison of assemblies
+{: .challenge}
+
+> ## Mapping reads to the assemblies
+{: .challenge}

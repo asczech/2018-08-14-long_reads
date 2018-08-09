@@ -1201,7 +1201,7 @@ oeaThreads=1
 
 To assembly the Illumina data we will use the Platanus assembler:
 ~~~
-./tools/platanus/platanus assemble -k 21 -m 4 -t 1 -f ./data/raw_data/illumina_R1.fastq ./data/raw_data/illumina_R2.fastq -o results/illumina_assembly
+./tools/platanus/platanus assemble -k 21 -m 4 -t 4 -f ./data/raw_data/illumina_R1.fastq ./data/raw_data/illumina_R2.fastq -o results/illumina_assembly
 ~~~
 {: .bash}
 > ## Platanus assembler
@@ -1242,6 +1242,22 @@ To assembly the Illumina data we will use the Platanus assembler:
 > >N80 = 1001134, n = 1
 > >N90 = 1001134, n = 1
 > >N100 = 1001134, n = 1
+> >N_count = 0
+> >Gaps = 0
+> >~~~
+> >{: .bash}
+> {: .solution}
+> > ## Illumina assembly
+> >~~~
+> >./tools/assembly-stats-master/build/assembly-stats ./results/illumina_assembly_contig.fa 
+> >stats for ./results/illumina_assembly_contig.fa
+> >sum = 1024211, n = 382, ave = 2681.18, largest = 146639
+> >N50 = 55012, n = 6
+> >N60 = 42739, n = 8
+> >N70 = 37838, n = 10
+> >N80 = 27857, n = 13
+> >N90 = 3330, n = 28
+> >N100 = 91, n = 382
 > >N_count = 0
 > >Gaps = 0
 > >~~~
