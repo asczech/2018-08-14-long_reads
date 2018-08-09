@@ -73,7 +73,6 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 >~~~
 > > ## PacBio
 > >~~~
-> >mkdir ./results/mummer
 > >./tools/mummer-4.0.0beta2/nucmer ./data/references/TAIR10_reference1MB.fasta ./results/canu_pacbio/canu_pacbio.contigs.fasta --delta=./results/mummer/tair10_pacbio.delta
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/TAIR10_reference1MB.fasta -Q ./results/canu_pacbio/canu_pacbio.contigs.fasta --prefix ./results/mummer/tair10_pacbio --fat --png ./results/mummer/tair10_pacbio.delta
 > >~~~
@@ -101,6 +100,30 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 {: .challenge}
 
 > ## Repeats in the assemblies
+> > ## PacBio
+> >~~~
+> >./tools/mummer-4.0.0beta2/nucmer --nosimplify --maxmatch ./results/canu_pacbio/canu_pacbio.contigs.fasta ./results/canu_pacbio/canu_pacbio.contigs.fasta --delta=./results/mummer/pacbio_self.delta
+> >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_pacbio/canu_pacbio.contigs.fasta -Q ./results/canu_pacbio/canu_pacbio.contigs.fasta --prefix ./results/mummer/pacbio_self --fat --png ./results/mummer/pacbio_self.delta
+> >~~~
+> >{: .bash}
+> >Added **--nosimplify --maxmatch** to nucmer and removed **--filter** from mummerplot
+> {: .solution}
+> > ## Nanopore
+> >~~~
+> >./tools/mummer-4.0.0beta2/nucmer --nosimplify --maxmatch ./results/canu_nanopore/canu_nanopore.contigs.fasta ./results/canu_nanopore/canu_nanopore.contigs.fasta --delta=./results/mummer/nanopore_self.delta
+> >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_nanopore/canu_nanopore.contigs.fasta -Q ./results/canu_nanopore/canu_nanopore.contigs.fasta --prefix ./results/mummer/nanopore_self --fat --png ./results/mummer/nanopore_self.delta
+> >~~~
+> >{: .bash}
+> >Added **--nosimplify --maxmatch** to nucmer and removed **--filter** from mummerplot
+> {: .solution}
+> > ## Illumina
+> >~~~
+> >./tools/mummer-4.0.0beta2/nucmer --nosimplify --maxmatch ./results/illumina_assembly_contig.fa ./results/illumina_assembly_contig.fa  --delta=./results/mummer/illumina_self.delta
+> >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/illumina_assembly_contig.fa -Q ./results/illumina_assembly_contig.fa  --prefix ./results/mummer/illumina_self --fat --png ./results/mummer/illumina_self.delta
+> >~~~
+> >{: .bash}
+> >Added **--nosimplify --maxmatch** to nucmer and removed **--filter** from mummerplot
+> {: .solution}
 {: .challenge}
 
 > ## Comparison of assemblies
