@@ -1230,6 +1230,7 @@ To assembly the Illumina data we will use the Platanus assembler:
 > >Gaps = 0
 > >~~~
 > >{: .bash}
+> {: .solution}
 > > ## Nanopore assembly
 > >~~~
 > >./tools/assembly-stats-master/build/assembly-stats ./results/canu_nanopore/canu_nanopore.contigs.fasta 
@@ -1246,4 +1247,8 @@ To assembly the Illumina data we will use the Platanus assembler:
 > >~~~
 > >{: .bash}
 > {: .solution}
+> Discuss the results and make a comparison of the three. Do the results match your expectations?
 {: .challenge}
+> ## Additional challenge
+> Play around with some of the settings of Canu and check the effects on the process and the end results. Change for example the minimum read length or the error correction values.
+{: .challenge} 

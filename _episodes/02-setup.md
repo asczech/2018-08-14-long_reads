@@ -54,7 +54,7 @@ The data can be downloaded from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm6
 
 ## Origin of the data
 
-For this workshop we have selected data sets and a particular region of **Arabidopsis thaliana (Thale cress)**. 
+For this workshop we have selected read data sets and a particular region of **Arabidopsis thaliana (Thale cress)**. 
 
 ## Rounding up
 
