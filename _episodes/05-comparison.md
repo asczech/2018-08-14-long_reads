@@ -127,6 +127,27 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 {: .challenge}
 
 > ## Comparison of assemblies
+> > ## PacBio vs. Nanopore
+> >~~~
+> >./tools/mummer-4.0.0beta2/nucmer --nosimplify --maxmatch ./results/canu_pacbio/canu_pacbio.contigs.fasta ./results/canu_nanopore/canu_nanopore.contigs.fasta --delta=./results/mummer/pacbio_nanopore.delta
+> >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_pacbio/canu_pacbio.contigs.fasta -Q ./results/canu_nanopore/canu_nanopore.contigs.fasta --prefix ./results/mummer/pacbio_nanopore --fat --png ./results/mummer/pacbio_nanopore.delta
+> >~~~
+> >{: .bash}
+> {: .solution}
+> > ## Nanopore vs Illumina
+> >~~~
+> >./tools/mummer-4.0.0beta2/nucmer --nosimplify --maxmatch ./results/canu_nanopore/canu_nanopore.contigs.fasta ./results/illumina_assembly_contig.fa --delta=./results/mummer/nanopore_illumina.delta
+> >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_nanopore/canu_nanopore.contigs.fasta -Q ./results/illumina_assembly_contig.fa --prefix ./results/mummer/nanopore_illumina --fat --png ./results/mummer/nanopore_illumina.delta
+> >~~~
+> >{: .bash}
+> {: .solution}
+> > ## PacBio vs. Illumina
+> >~~~
+> >./tools/mummer-4.0.0beta2/nucmer --nosimplify --maxmatch ./results/canu_pacbio/canu_pacbio.contigs.fasta ./results/illumina_assembly_contig.fa  --delta=./results/mummer/pacbio_illumina.delta
+> >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_pacbio/canu_pacbio.contigs.fasta -Q ./results/illumina_assembly_contig.fa  --prefix ./results/mummer/pacbio_illumina --fat --png ./results/mummer/pacbio_illumina.delta
+> >~~~
+> >{: .bash}
+> {: .solution}
 {: .challenge}
 
 > ## Mapping reads to the assemblies
