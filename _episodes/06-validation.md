@@ -11,6 +11,7 @@ apps:
 - "./tools/minimap2-2.11_x64-linux/minimap2"
 - "./tools/Tablet/tablet"
 - "./tools/samtools-1.9/samtools"
+- "Integrative Genomics Viewer"
 ---
 
 During this session we will use genes and RNASeq data to validate the results of the assembly process and investigate the impact of assembly errors on the gene content.
