@@ -10,6 +10,7 @@ keypoints:
 apps:
 - "./tools/minimap2-2.11_x64-linux/minimap2"
 - "./tools/Tablet/tablet"
+- "./tools/samtools-1.9/samtools"
 ---
 
 During this session we will use genes and RNASeq data to validate the results of the assembly process and investigate the impact of assembly errors on the gene content.
@@ -42,6 +43,12 @@ During this session we will use genes and RNASeq data to validate the results of
 > ./tools/Tablet/tablet
 > ~~~
 > {: .bash}
+> You might need to sort the SAM file: Tablet will report this if necessary. You can do this with samtools:
+>~~~
+>./tools/samtools-1.9/samtools view -b -o mapping.bam mapping.sam
+>./tools/samtools-1.9/samtools sort -O SAM mapping.bam > sorted.sam
+>~~~
+>{: .bash}
 > Open Tablet and load the reference plus a SAM file. For each of the three results files, visually check:
 > 
 > 1. The number of mismatches, insertions and deletions (Tablet supports different **Color schemes** to help with this).
@@ -74,5 +81,8 @@ During this session we will use genes and RNASeq data to validate the results of
 > > {: .bash}
 > {: .solution}
 > Visualize the results again in Tablet. 
+> 
+> 1. Do these mappings match you expectations?
+> 2. Which mapping(s) is/are the most informative?
 {: .challenge}
 
