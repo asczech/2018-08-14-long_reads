@@ -1,5 +1,5 @@
 ---
-title: "Validation of assemblies using gene sequences and RNASeq"
+title: "Validation of assemblies"
 teaching: 30
 exercises: 120
 questions: 
@@ -106,3 +106,24 @@ For this we use [four genes](https://www.dropbox.com/s/s0lopvphn9na49i/AT4G_gene
 > >{: .bash}
 > {:.solution}
 {: .challenge}
+
+
+## Integrative Genomics Viewer
+
+The [Integrative Genomics Viewer (IGV)](http://software.broadinstitute.org/software/igv/home) is a more complex type of viewer for, amongst others, sequence alignment results. 
+With this viewer it is possible to have the different alignment files in a single window, which is not possible with Tablet.
+It is written in Java and hence [also available for Linux](http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.13.zip).
+
+To be able to use IGV you need to have an indexed, sorted BAM file:
+~~~
+./tools/samtools-1.9/samtools view -b mapping.sam > mapping.bam
+./tools/samtools-1.9/samtools sort mapping.bam > mapping.sorted.bam
+./tools/samtools-1.9/samtools index mapping.sorted.bam
+~~~
+{: .bash} 
+
+> ## IGV
+> Load each of the three assemblies in IGV and add the different mapping results (reads, mRNA) to the viewer.
+> Have a close look at SNPs and other differences you might find.
+{: .challenge}
+
