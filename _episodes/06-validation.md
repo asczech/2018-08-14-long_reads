@@ -86,3 +86,23 @@ During this session we will use genes and RNASeq data to validate the results of
 > 2. Which mapping(s) is/are the most informative?
 {: .challenge}
 
+## Assembly base quality check using mRNA sequence
+
+For this we use [four genes](https://www.dropbox.com/s/s0lopvphn9na49i/AT4G_genes.fasta?dl=0) we selected from this region of interest. Please download these [four mRNA](https://www.dropbox.com/s/s0lopvphn9na49i/AT4G_genes.fasta?dl=0) sequences and store them in the **data** folder.
+
+> ## Mapping mRNA sequences
+> **minimap2** can also be used to map mRNA sequences to a genomic sequence:
+>~~~
+>./tools/minimap2-2.11_x64-linux/minimap2 -t 4 -x splice -a
+>~~~
+>{: .bash}
+> Map these mRNA sequences to each of the open the alignments in Tablet.
+> > ## Solution
+> >~~~
+> >./tools/minimap2-2.11_x64-linux/minimap2 ./results/canu_pacbio/canu_pacbio.contigs.fasta  ./data/AT4G_genes.fasta -t 4 -x splice -a > ./results/AT4G_to_pacbio_assembly.sam
+> >./tools/minimap2-2.11_x64-linux/minimap2 ./results/canu_nanopore/canu_nanopore.contigs.fasta  ./data/AT4G_genes.fasta -t 4 -x splice -a > ./results/AT4G_to_nanopore_assembly.sam
+> >./tools/minimap2-2.11_x64-linux/minimap2 ./results/illumina_assembly_contig.fa ./data/AT4G_genes.fasta -t 4 -x splice -a > ./results/AT4G_to_illumina_assembly.sam
+> >~~~
+> >{: .bash}
+> {:.solution}
+{: .challenge}
