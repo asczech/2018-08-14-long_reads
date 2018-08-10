@@ -161,6 +161,3 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >![PacBio vs Illumina](../fig/pacbio_illumina.png)
 > {: .solution}
 {: .challenge}
-
-> ## Mapping reads to the assemblies
-{: .challenge}
