@@ -44,6 +44,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/reference1MB.fasta -Q ./results/canu_pacbio/canu_pacbio.contigs.fasta --prefix ./results/mummer/ref_pacbio --fat --png ./results/mummer/ref_pacbio.delta
 > >~~~
 > >{: .bash}
+> >![PacBio]({{ page.root }}/episodes/images/ref_pacbio.png)
 > {: .solution}
 > > ## Nanopore
 > >~~~
