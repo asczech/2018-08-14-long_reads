@@ -44,7 +44,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/reference1MB.fasta -Q ./results/canu_pacbio/canu_pacbio.contigs.fasta --prefix ./results/mummer/ref_pacbio --fat --png ./results/mummer/ref_pacbio.delta
 > >~~~
 > >{: .bash}
-> >![PacBio](../figs/ref_pacbio.png)
+> >![PacBio](../fig/ref_pacbio.png)
 > {: .solution}
 > > ## Nanopore
 > >~~~
@@ -52,7 +52,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/reference1MB.fasta -Q ./results/canu_nanopore/canu_nanopore.contigs.fasta --prefix ./results/mummer/ref_nanopore --fat --png ./results/mummer/ref_nanopore.delta
 > >~~~
 > >{: .bash}
-> >![Nanopore](../figs/ref_nanopore.png)
+> >![Nanopore](../fig/ref_nanopore.png)
 > {: .solution}
 > > ## Illumina
 > >~~~
@@ -60,7 +60,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/reference1MB.fasta -Q ./results/illumina_assembly_contig.fa  --prefix ./results/mummer/ref_illumina --fat --png ./results/mummer/ref_illumina.delta
 > >~~~
 > >{: .bash}
-> >![Illumina](../figs/ref_illumina.png)
+> >![Illumina](../fig/ref_illumina.png)
 > {: .solution}
 > Now discus:
 > 
@@ -80,6 +80,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/TAIR10_reference1MB.fasta -Q ./results/canu_pacbio/canu_pacbio.contigs.fasta --prefix ./results/mummer/tair10_pacbio --fat --png ./results/mummer/tair10_pacbio.delta
 > >~~~
 > >{: .bash}
+> >![PacBio](../fig/tair10_pacbio.png)
 > {: .solution}
 > > ## Nanopore
 > >~~~
@@ -87,6 +88,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/TAIR10_reference1MB.fasta -Q ./results/canu_nanopore/canu_nanopore.contigs.fasta --prefix ./results/mummer/tair10_nanopore --fat --png ./results/mummer/tair10_nanopore.delta
 > >~~~
 > >{: .bash}
+> >![Nanopore](../fig/tair10_nanopore.png)
 > {: .solution}
 > > ## Illumina
 > >~~~
@@ -94,6 +96,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --filter --layout -R ./data/references/TAIR10_reference1MB.fasta -Q ./results/illumina_assembly_contig.fa  --prefix ./results/mummer/tair10_illumina --fat --png ./results/mummer/tair10_illumina.delta
 > >~~~
 > >{: .bash}
+> >![Illumina](../fig/tair10_illumina.png)
 > {: .solution}
 > Now discus:
 > 
@@ -110,6 +113,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >~~~
 > >{: .bash}
 > >Added **--nosimplify --maxmatch** to nucmer and removed **--filter** from mummerplot
+> >![PacBio](../fig/pacbio_self.png)
 > {: .solution}
 > > ## Nanopore
 > >~~~
@@ -118,6 +122,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >~~~
 > >{: .bash}
 > >Added **--nosimplify --maxmatch** to nucmer and removed **--filter** from mummerplot
+> >![Nanopore](../fig/nanopore_self.png)
 > {: .solution}
 > > ## Illumina
 > >~~~
@@ -126,6 +131,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >~~~
 > >{: .bash}
 > >Added **--nosimplify --maxmatch** to nucmer and removed **--filter** from mummerplot
+> >![Illumina](../fig/illumina_self.png)
 > {: .solution}
 {: .challenge}
 
@@ -136,6 +142,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_pacbio/canu_pacbio.contigs.fasta -Q ./results/canu_nanopore/canu_nanopore.contigs.fasta --prefix ./results/mummer/pacbio_nanopore --fat --png ./results/mummer/pacbio_nanopore.delta
 > >~~~
 > >{: .bash}
+> >![PacBio vs. Nanopore](../fig/pacbio_nanopore.png)
 > {: .solution}
 > > ## Nanopore vs Illumina
 > >~~~
@@ -143,6 +150,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_nanopore/canu_nanopore.contigs.fasta -Q ./results/illumina_assembly_contig.fa --prefix ./results/mummer/nanopore_illumina --fat --png ./results/mummer/nanopore_illumina.delta
 > >~~~
 > >{: .bash}
+> >![Nanopore vs. Illumina](../fig/nanopore_illumina.png)
 > {: .solution}
 > > ## PacBio vs. Illumina
 > >~~~
@@ -150,6 +158,7 @@ The first step is to align two fasta files using **nucmer**. Based on these alig
 > >./tools/mummer-4.0.0beta2/mummerplot  --color --medium --layout -R ./results/canu_pacbio/canu_pacbio.contigs.fasta -Q ./results/illumina_assembly_contig.fa  --prefix ./results/mummer/pacbio_illumina --fat --png ./results/mummer/pacbio_illumina.delta
 > >~~~
 > >{: .bash}
+> >![PacBio vs Illumina](../fig/pacbio_illumina.png)
 > {: .solution}
 {: .challenge}
 
