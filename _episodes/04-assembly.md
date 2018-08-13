@@ -62,6 +62,13 @@ oeaThreads=1
 > ./tools/canu-1.7.1/Linux-amd64/bin/canu -s results/canu.spec -pacbio-raw ./data/raw_data/pacbio_reads.fasta -p canu_pacbio -d results/canu_pacbio genomeSize=1M
 > ~~~
 > {: .bash}
+> Try to find out in the manual what each of the following settings mean and how they effect the assembly process:
+>
+> 1. corOutCoverage
+> 2. corMinCoverage
+> 3. minOverlapLength
+> 4. minReadLength
+> 5. ovlMerDistinct
 {: .challenge}
 
 > ## The Canu log file
@@ -1208,7 +1215,7 @@ To assembly the Illumina data we will use the Platanus assembler:
 > While the Platanus assembler is running, investigate the following items:
 > 
 > 1. What does the -k stand for?
-> 2. How does this setting relate to heterozygosity, ploidy or repeat content?
+> 2. How do k-mers relate to heterozygosity, ploidy or repeat content?
 {: .challenge}
 
 ## Basic statistics on the assemblies
@@ -1263,7 +1270,7 @@ To assembly the Illumina data we will use the Platanus assembler:
 > >~~~
 > >{: .bash}
 > {: .solution}
-> Discuss the results and make a comparison of the three. Do the results match your expectations?
+> Discuss the results and make a comparison of the three. Do the results match your expectations? Which one do you prefer and why?
 {: .challenge}
 > ## Additional challenge
 > Play around with some of the settings of Canu and check the effects on the process and the end results. Change for example the minimum read length or the error correction values.

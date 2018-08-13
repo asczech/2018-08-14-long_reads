@@ -47,14 +47,15 @@ The list of tools used for workshop:
 6. Mummer 4
 7. Samtools & BCF tools
 8. Tablet
+9. Integrative Genomics Viewer (optional)
 
 The workshop code folder contains a shell-script [installing_workshop_vm.sh]({{site.workshop_site}}code/installing_workshop_vm.sh) which installs all required packages.
 
-The data can be downloaded from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm687v/prepared.tar.gz?dl=0). 
+The data are available from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm687v/prepared.tar.gz?dl=0). 
 
 ## Origin of the data
 
-For this workshop we have selected read data sets and a particular region of **Arabidopsis thaliana (Thale cress)**. 
+For this workshop we have selected read data sets and a particular region of a cultivar of **Arabidopsis thaliana (Thale cress)**. 
 
 ## Rounding up
 

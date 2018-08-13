@@ -14,6 +14,8 @@ apps:
 - "Integrative Genomics Viewer"
 ---
 
+## Evaluating the results using other data
+
 During this session we will use genes and RNASeq data to validate the results of the assembly process and investigate the impact of assembly errors on the gene content.
 
 
