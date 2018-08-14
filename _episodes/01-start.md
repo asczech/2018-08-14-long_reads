@@ -30,6 +30,6 @@ To give feedback, solutions and other things you'd like to share, please use thi
 
 ## Presentation
 
-[The presentation on long read technologies is also available for download.](../fig/longReadAssembly.ppt)
+[The presentation on long read technologies is also available for download.](../fig/LongReadAssembly.ppt)
 
 {% include links.md %}
