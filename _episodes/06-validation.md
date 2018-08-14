@@ -116,6 +116,14 @@ For this we use [four genes](https://www.dropbox.com/s/s0lopvphn9na49i/AT4G_gene
 The [Integrative Genomics Viewer (IGV)](http://software.broadinstitute.org/software/igv/home) is a more complex type of viewer for, amongst others, sequence alignment results. 
 With this viewer it is possible to have the different alignment files in a single window, which is not possible with Tablet.
 It is written in Java and hence [also available for Linux](http://data.broadinstitute.org/igv/projects/downloads/2.4/IGV_2.4.13.zip).
+It is possible to start the IGV directly from command line using Java Web Start. For this an IcedTea package need to be installed:
+~~~
+#install icedtea
+sudo apt install icedtea-netx
+#run IGV
+javaws  http://data.broadinstitute.org/igv/projects/2.4/igv24_lm.jnlp
+~~~
+{: .bash} 
 
 To be able to use IGV you need to have an indexed, sorted BAM file:
 ~~~
