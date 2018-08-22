@@ -33,7 +33,9 @@ The next steps will install and run the Ubuntu image:
 7. Clicking **Start** (green arrow) should now start Ubuntu and you will automatically login.
 8. It is now recommended to leave the host system alone and work only on the Ubuntu virtual machine.
 
-The image is a regular Ubuntu install, so if you install this on your laptop or desktop you can continue to use it. 
+The image is a regular Ubuntu install, so if you install this on your laptop or desktop you can continue to use it.
+
+The password for the user is **genetwister** and the Ubuntu user has superuser access ('sudo').  
 
 ## Installing the data and tools on your own Ubuntu
 
