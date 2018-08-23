@@ -20,7 +20,7 @@ For the workshop we use Ubuntu Linux as the main Operating System. We have creat
 
 VirtualBox is a virtualization tool from VMWare and is [freely available](https://www.virtualbox.org/wiki/Downloads). The Windows systems in use for this workshop at Wageningen UR already have it installed.
 
-The ubuntu image can be obtained uppon a request. Send email to [Andrzej S. Czech](mailto:a.s.czech@genetwister.nl) for a download link. Please, download the image and store it on a local hard drive. A network location usually does not work, so it is better to store it locally.
+The ubuntu image can be obtained upon a request. Send email to [Andrzej S. Czech](mailto:a.s.czech@genetwister.nl) for a download link. Please, download the image and store it on a local hard drive. A network location usually does not work, so it is better to store it locally.
 
 The next steps will install and run the Ubuntu image:
 
@@ -53,7 +53,7 @@ The list of tools used for workshop:
 
 The workshop code folder contains a shell-script [installing_workshop_vm.sh]({{site.workshop_site}}code/installing_workshop_vm.sh) which installs all required packages.
 
-The data are available from [Dropbox](https://www.dropbox.com/s/03uj6ppq0tm687v/prepared.tar.gz?dl=0). 
+The data are available upon a request. Send email to [Andrzej S. Czech](mailto:a.s.czech@genetwister.nl) for a download link.
 
 ## Origin of the data
 
